@@ -14,7 +14,7 @@
  }
  
  .menu-right > div {
-   padding: 20px;
+   padding-left: 20px;
  }
  
  .menu-button {
@@ -27,6 +27,43 @@
    color: #fff;
    text-decoration: none;
 }
+
+ .all{
+   position: relative;
+ }
+ 
+ .main-all{
+   position: absolute;
+   text-align: center;
+   width: 70%;
+ }
+
+.main-img {
+   display: flex;
+   flex-direction: row-reverse; /* 子要素を上下中央に揃える設定 */
+   justify-content: center; /* 子要素を左右中央に揃える設定 */
+   gap: 20px; /* 子要素間の余白を20pxに設定 */
+ }
+
+.two-button {
+   display: flex;
+   flex-direction: row-reverse; /* 子要素を上下中央に揃える設定 */
+   justify-content: center; /* 子要素を左右中央に揃える設定 */
+   gap: 20px; /* 子要素間の余白を20pxに設定 */
+ }
+ 
+.main-orangebutton {
+  width: 400px;
+  height: 50px;
+  background-color: #f79214;
+  border-radius: 30px;
+}
+
+.main-orangebutton a{
+   color: #fff;
+   text-decoration: none;
+}
+
  .main-button {
   width: 200px;
   border-radius: 30px;
@@ -37,16 +74,25 @@
    text-decoration: none;
 }
 
+.main-lowercase{
+ color: #808080;
+ font-size: 12px;
+}
+
  .Background {
    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg.webp);
    background-size: cover;
-   height: 750px;
+   height: 700px;
+   width: 700px;
  }
  
  .video-orange{
    display: flex;
    justify-content: center;
-    gap: 20px; 
+   gap: 10px; 
+   background-color: #f79214;
+   padding-top: 20px;
+   padding-bottom: 20px;
  }
  
  .video-left video{
