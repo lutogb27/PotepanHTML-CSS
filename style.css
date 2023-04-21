@@ -1,48 +1,147 @@
-.global-menu{
-   display: flex;
-   justify-content: space-between;
-   padding: 0 20px;
- }
- 
- .menu-left {
-   padding: 20px;
- }
- 
- .menu-right {
-   display: flex;
-   justify-content: space-between;
- }
- 
- .menu-right > div {
-   padding-left: 20px;
- }
- 
- .menu-button {
-  width: 200px;
-  background-color: #f79214;
-  border-radius: 30px;
+.body {
+    color: #333;
+    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
 }
 
-.menu-button a{
-   color: #fff;
+@media screen and (max-width: 1080px)
+.headline{
+    background-color: #fff;
+    z-index: 10;
+}
+
+@media screen and (max-width: 1080px)
+.headline-top{
+    position: fixed;
+}
+
+.headline-top{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+}
+
+.headline-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    max-width: 100%;
+    position: relative;
+}
+
+.headline-menu>:last-child {
+    display: inline-flex;
+}
+
+@media screen and (max-width: 1080px)
+.headline-nav-hamburger{
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+}
+ 
+ .headline-menu-left {
+   padding: 20px;
+ }
+
+.headline-nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.headline-nav-item{
+    padding-left: 20px;
+    margin-right: 45px;
+}
+
+.headline-nav-item-web{
+   color: #333;
    text-decoration: none;
 }
 
- .all{
-   position: relative;
- }
- 
- .main-all{
-   position: absolute;
-   text-align: center;
-   width: 70%;
- }
+.headline-nav-item-web>span {
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+}
+
+.headline-nav-item-web>span:last-child {
+    font-size: 10px;
+}
+
+ .headline-nav-item-web-button {
+  align-items: center;
+    background-color: #f79214;
+    border-radius: 38px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    height: 60px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    padding: 0 20px;
+}
+
+@media screen and (min-width: 768px)
+.headline-nav-item-web-button{
+    transition: opacity .2s;
+}
+
+.main {
+    display: block;
+}
+.main-left{
+    text-align: left;
+    width: 70%;
+}
+
+.back-image{
+    background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 28px;
+}
+
+.main-image {
+    display: none;
+}
+
+.main-unity {
+    margin-bottom: 50px;
+    width: fit-content;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-text {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+}
 
 .main-img {
    display: flex;
    flex-direction: row-reverse; /* 子要素を上下中央に揃える設定 */
    justify-content: center; /* 子要素を左右中央に揃える設定 */
    gap: 20px; /* 子要素間の余白を20pxに設定 */
+   margin-bottom: 20px;
  }
 
 .two-button {
@@ -53,10 +152,14 @@
  }
  
 .main-orangebutton {
-  width: 400px;
+  width: 300px;
   height: 50px;
   background-color: #f79214;
   border-radius: 30px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  padding-top: 20px;
 }
 
 .main-orangebutton a{
@@ -66,12 +169,19 @@
 
  .main-button {
   width: 200px;
+  background-color: #fff;
   border-radius: 30px;
+  border: 2px solid #e0e0e0;;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 20px;
 }
 
 .main-button a{
    color: #000000;
    text-decoration: none;
+   justify-content: center;
 }
 
 .main-lowercase{
@@ -79,22 +189,55 @@
  font-size: 12px;
 }
 
- .Background {
-   background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg.webp);
-   background-size: cover;
-   height: 700px;
-   width: 700px;
- }
+.main-lowercase a{
+ color: #808080;
+ text-decoration: none;
+}
+
+.video-orange{
+    background-color: #f79214;
+    padding: 50px 0;
+}
  
- .video-orange{
-   display: flex;
-   justify-content: center;
-   gap: 10px; 
-   background-color: #f79214;
-   padding-top: 20px;
-   padding-bottom: 20px;
- }
+ .video-left{
+    max-width: 1000px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
  
  .video-left video{
-    width: 75%;
+    width: 50%;
  }
+ 
+ .video-right{
+    display: block; 
+    align-items: center;
+    width: 100%;
+    margin-left: 50px;
+    color: #fff;
+    text-align: left;
+}
+
+.video-right h2 {
+    font-size: 40px;
+}
+
+.video-right br {
+    display: none;
+}
+
+.video-button {
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    gap: 5px;
+    color:#fff;
+    text-decoration: none;
+}
