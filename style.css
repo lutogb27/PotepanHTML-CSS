@@ -201,7 +201,7 @@
 
 @media screen and (max-width: 767px) {
 .back-image{
-    background-image: none;
+    background-image: none!important;
     padding-top: 0;
     padding-bottom: 35px;
     display:block;
@@ -334,6 +334,10 @@
    text-decoration: none;
 }
 
+.main-orangebutton:hover{
+   opacity: 0.7;
+}
+
 @media screen and (max-width: 767px){
 .main-orangebutton{
     width: 100% ;
@@ -354,6 +358,10 @@
    color: #000000;
    text-decoration: none;
    justify-content: center;
+}
+
+.main-button:hover{
+   opacity: 0.7;
 }
 
 @media screen and (max-width: 767px){
